@@ -1,0 +1,36 @@
+{
+	"files": {
+		"assets/css/less/import.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../main-style.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourcemap": true
+					}
+				}
+			],
+			"sources": [
+				"base.less",
+				"button.less",
+				"content.less",
+				"font-face.less",
+				"layout.less",
+				"mixins.less",
+				"nav.less",
+				"navbar.less",
+				"palette.less",
+				"portlets.less",
+				"sidebar.less",
+				"state.less",
+				"table.less",
+				"variables.less"
+			]
+		}
+	}
+}

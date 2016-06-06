@@ -1,0 +1,90 @@
+.portlet {
+    .box-shadow( 0 2px 3px 2px rgba(0,0,0,.03) );    
+}
+.portlet {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 25px;
+    .border-radius( 2 );
+    
+    > .portlet-title:after, .portlet-title:before {
+        display: table;
+        content: " ";
+    }
+    
+    > .portlet-title {
+        margin-bottom: 10px;
+        min-height: 42px;
+        border-bottom: 1px solid #EEEEEE;
+        .border-radius( 2px 2px 0 0 );
+        
+        > .caption {
+            display: inline-block;
+            padding: 10px 0;
+            float: left;
+            .font-size( 18 );
+            line-height: 18px;
+            
+            > .fa {
+                margin: 3px 3px 0 0;
+                .font-size( 14 );
+                font-weight: 300;
+                
+            }
+            
+            > .caption-title {
+                .font-size( 16 );
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+        > .actions {
+            float: right;
+            display: inline-block;
+            padding: 6px 0;
+            
+            .btn-icon-only {
+                height: 27px;
+                width: 27px;
+                &.btn-default, &.btn-primary, &.btn-danger, &.btn-warning, &.btn-info {
+                    padding: 4px 6px 2px;
+                }
+            }
+
+            > .btn {
+                padding: 4px 10px;
+                font-size: 13px;
+                line-height: 1.5;
+                
+                .btn-sm {
+                    padding: 4px 10px;
+                    font-size: 13px;
+                    line-height: 1.5;
+                }
+            }
+            
+            > .btn-group {
+                >.btn {
+                    padding: 4px 10px;
+                    font-size: 13px;
+                    line-height: 1.5;
+                    
+                    .btn-sm {
+                        padding: 4px 10px;
+                        font-size: 13px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+        > .tools {
+            float: right;
+            display: inline-block;
+            padding: 12px 0 8px;
+        }
+    }
+}
+.portlet.light {
+    padding: 12px 20px 15px;
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,45 @@
+@import "font-face.less";
+
+html {
+    font-size: @font-size-base;    
+}
+body {
+    background-color: @body-bg-color;
+    
+    color: @primaryTextColor;
+    
+    font-family: @font-family-base;
+    .font-size( 14 );
+    font-weight: 400;
+}
+
+// Headings
+h1, .h1 {
+    .font-size( 36 );
+}
+h2, .h2 {
+    .font-size( 30 );
+}
+h3, .h3 {
+    .font-size( 24 );
+}
+h4, .h4 {
+    .font-size( 18 );
+}
+h5, .h5 {
+    .font-size( 14 );
+}
+h6, .h6 {
+    .font-size( 12 );
+}
+
+.lead {
+    .font-size( 16 );   
+}
+
+// Media Queries
+@media (min-width: 768px) {
+  .lead {
+    .font-size( 21 );
+  }
+}

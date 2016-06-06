@@ -1,0 +1,54 @@
+
+// Opacity
+.opacity( @opacity ) {
+    opacity: @opacity;
+    @opacity-ie: ( @opacity * 100 ); // IE8 filter
+    filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+// Single side border-radius
+.border-top-radius( @radius ) {
+    border-top-right-radius: @radius;
+    border-top-left-radius: @radius;
+}
+.border-right-radius( @radius ) {
+    border-bottom-right-radius: @radius;
+    border-top-right-radius: @radius;
+}
+.border-bottom-radius( @radius ) {
+    border-bottom-right-radius: @radius;
+    border-bottom-left-radius: @radius;
+}
+.border-left-radius( @radius ) {
+    border-bottom-left-radius: @radius;
+    border-top-left-radius: @radius;
+}
+
+// Full side border-radius
+.border-radius( @radius ) {
+    border-radius: @radius;   
+}
+
+// Box Shadow
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+// Typograhpy font sizes
+// http://stackoverflow.com/questions/15475277/css-less-mixin-for-fonts
+.font-size( @sv ) {
+    @sizeValue: unit( @sv ); // Strip-out any appended unit
+    @fontBase: ( @font-size-base * 16 ) / 100;
+    @fontSize: ( @sizeValue / @fontBase );
+    font-size: unit( @fontSize, rem ); 
+}
+
+// Animation
+.transition( @properties ) {
+    -webkit-transition: @properties;
+       -moz-transition: @properties;
+         -o-transition: @properties;
+            transition: @properties;
+}

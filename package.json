@@ -1,0 +1,14 @@
+{
+  "name": "vtportal",
+  "version": "0.0.1",
+  "description": "Vistracks new protal",
+  "author": {
+    "name": "Vistracks CDEo Team"
+  },
+  "homepage": "http://www.vistracks.com/",
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap-dialog": "^1.34.6",
+    "font-awesome": "^4.6.3"
+  }
+}
